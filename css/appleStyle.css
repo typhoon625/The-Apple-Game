@@ -1,0 +1,65 @@
+html {
+    background: url("http://www.qqxxzx.com/images/white-background-wallpaper/white-background-wallpaper-10.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+body {
+    color: black;
+    background-color: transparent;
+}
+
+h1#apple_header {
+    font-size: 70px;
+    font-family: "Verdana, Geneva, Tahoma, sans-serif";
+    display: "block";
+}
+
+h2#instructions {
+    font-size: 25px;
+    font-family: "Verdana, Geneva, Tahoma, sans-serif";
+    padding-bottom: 40px;
+    padding-top: 40px;
+    position: absolute;
+    top: 12%;
+    left: 15%;
+    display: "block";
+}
+
+body#apple_app_id {
+    margin-top: 135px;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.btn-wrapper {
+    padding: 20px 0;
+    position: absolute;
+    top: 80%;
+    left: 35%;
+    font-size: 40px;
+    display: inline-block;
+}
+
+.poem_content {
+    color: mediumturquoise;
+    position: absolute;
+    top: 30%;
+}
+
+.description_content {
+    color: antiquewhite;
+    position: absolute;
+    top: 30%;
+}
+
+.apple_image {
+    display: "block";
+    position: absolute;
+    left: 39%;
+    top: 30%;
+}
+
+

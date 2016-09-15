@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> The Apple Game </title>
+        <link rel="stylesheet" type ="text/css" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" type = "text/css" href = "./css/appleStyle.css">
+        <link rel = "stylesheet" href = "./css/fakeLoader.css">
+        <link rel = "stylesheet" type = "text/css" href = "./node_modules/sweetalert/dist/sweetalert.css">
+    </head>
+    <body>
+        <div id = "fakeLoader"></div>
+
+        <div class = "container" id = "page-container">
+            <h1 id = "apple_header"> 
+                 <span class = "glyphicon glyphicon-apple"></span> The Apple Game
+            </h1>
+            <h2 id = "instructions">
+                 You choose an image of an apple from your computer. We try to guess the colour of the apple.
+            </h2>
+            <div class = "apple_image">
+            <input type="image" src = "cartoonApple.png" name = "anotherImage" class = "btTxt submit" id="anotherImage" />
+            </div>
+
+            <div class="btn-wrapper">
+                <label class="btn btn-info" for="select_file">
+                    <input id="select_file" type="file">
+                    Choose an image of an apple from your computer!
+                </label>
+            </div>
+        </div>
+        <script src = "./node_modules/sweetalert/dist/sweetalert.min.js"> </script>
+        <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="./js/main.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src = "./node_modules/fakeLoader.min.js">
+        <script type="text/javascript">
+            $("#fakeLoader").fakeLoader();
+        </script>
+        <script type = "text/javascript">
+            $("#fakeLoader").fakeLoader({
+                timeToHide: 1000,
+                zIndex: 500,
+                spinner: "spinner4",
+                bgColor: "#FFFF00"
+            });
+        </script>
+    </body>
+</html>
