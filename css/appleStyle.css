@@ -28,12 +28,6 @@ h2#instructions {
     display: "block";
 }
 
-body#apple_app_id {
-    margin-top: 135px;
-    text-align: center;
-    margin-bottom: 35px;
-}
-
 .btn-wrapper {
     padding: 20px 0;
     position: absolute;
@@ -41,18 +35,6 @@ body#apple_app_id {
     left: 35%;
     font-size: 40px;
     display: inline-block;
-}
-
-.poem_content {
-    color: mediumturquoise;
-    position: absolute;
-    top: 30%;
-}
-
-.description_content {
-    color: antiquewhite;
-    position: absolute;
-    top: 30%;
 }
 
 .apple_image {

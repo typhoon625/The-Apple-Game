@@ -1,10 +1,10 @@
 var apple_object: Description;
 var title = $("#apple_header")[0];
-var selectImage: HTMLInputElement = <HTMLInputElement> $("#select_file");
+var selectImage: HTMLInputElement = <HTMLInputElement> $("#select_file")[0];
 var anotherImage = $("#anotherImage")[0];
 var comments = $("#instructions")[0];
 
-selectImage.on("change", function() {
+selectImage.addEventListener("change", function() {
     comments.innerHTML = "Analysing the image...";
     processImage(function(file) {
         sendImageRequest(file, function(info) {
@@ -14,11 +14,11 @@ selectImage.on("change", function() {
     });
 });
 
-anotherImage.on("click", function() {
+anotherImage.addEventListener("click", function() {
     swal("You clicked me!");
 });
 
-function processImage(callback) {
+function processImage(callback): void {
     var file = selectImage.get(0).files[0]; 
     var reader = new FileReader();
     if (file) {
@@ -38,11 +38,11 @@ function processImage(callback) {
 };
 
 
-function changeUI() {
+function changeUI(): void {
     comments.innerHTML = "The image you have presented to us is in fact " + apple_object.name;
 }
 
-function sendImageRequest(file, callback) {    
+function sendImageRequest(file, callback): void {    
         $.ajax({
             url: "https://api.projectoxford.ai/vision/v1.0/describe",
             beforeSend: function (xhrObj){
