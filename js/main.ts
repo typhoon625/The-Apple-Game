@@ -1,7 +1,7 @@
-var apple_object;
+var apple_object: Description;
 var title = $("#apple_header")[0];
-var selectImage = $("#select_file");
-var anotherImage = $("#anotherImage");
+var selectImage: HTMLInputElement = <HTMLInputElement> $("#select_file");
+var anotherImage = $("#anotherImage")[0];
 var comments = $("#instructions")[0];
 
 selectImage.on("change", function() {
